@@ -1,0 +1,13 @@
+version: "3"
+services:
+  mysqldb:
+    image: mysql:5.7
+    environment:
+      - MYSQL_ROOT_PASSWORD=123456
+      - MYSQL_DATABASE=spring_social
+      - MYSQL_USER=sa
+      - MYSQL_PASSWORD=123456
+    ports:
+      - '3306:3306'
+    expose:
+      - '3306'
